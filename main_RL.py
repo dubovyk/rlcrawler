@@ -199,7 +199,7 @@ if __name__ == '__main__':
                 body_trajectory.append(robot.get_body_position())
                 joints_trajectory.append(robot.get_joint_angles())
 
-                for t in range(args.episode_num):
+                for t in range(args.episode_len):
                     if args.algo == 'q-learning':
                         agent.play()
                     elif args.algo == 'sarsa':
